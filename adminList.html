@@ -1,0 +1,53 @@
+<% include header.ejs%>
+<body>
+
+<div class="container">
+
+<div class="row">
+<div class="col-12 d-flex h-100 flex-column justify-content-between">
+
+<table class="table table-hover mt-2">
+<thead>
+<tr>
+   <th>姓名</th>
+   <th>性别</th>
+   <th>手机号</th>
+   <th>邮箱</th>
+   <th>密码</th>
+   <th>操作</th>
+</tr>
+</thead>
+<tbody>
+    <% for(var i in admintors) {%>
+<tr>
+    <td><%=admintors[i].name%></td>
+    <td><%=admintors[i].sex%></td>
+    <td><%=admintors[i].phone%></td>
+    <td><%=admintors[i].email%></td>
+    <td><%=admintors[i].password%></td>
+    <td><button class="btn btn-sm btn-danger">修改</button><button class="btn btn-sm btn-danger ml-2">删除</button></td>
+</tr>
+
+<%}%>
+</tbody>
+</table>
+
+<div class="w-100 d-flex justify-content-center mb-4">
+<ul class="pagination">
+<li class="page-item"><a class="page-link">上一页</a></li>
+<li class="page-item active"><a class="page-link">1</a></li>
+<li class="page-item"><a class="page-link">2</a></li>
+<li class="page-item"><a class="page-link">3</a></li>
+<li class="page-item"><a class="page-link">...</a></li>
+<li class="page-item"><a class="page-link">下一页</a></li>
+<li class="page-item"><a class="page-link">共10页</a></li>
+
+</ul>
+</div>
+
+    </div>
+</div>
+</div>
+
+</body>
+</html>
