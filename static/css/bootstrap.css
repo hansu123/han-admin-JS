@@ -4710,7 +4710,7 @@ tbody.collapse.show {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   color: #6c757d;
-  content: "/";
+  content: ">";
 }
 
 .breadcrumb-item + .breadcrumb-item:hover::before {
@@ -8979,7 +8979,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-/************intel ×Ô¶¨ÒåµÄÑùÊ½************/
+/************intel ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½************/
 .my-main {
   background: #0062a9;
   color: #fff;
