@@ -1,4 +1,4 @@
-# bootadmin
+# han-admin
 
 <h5>基于bootstrap的后台框架</h5>
 
@@ -24,4 +24,4 @@ bootstrap4.0不再移除了.glyphicon图标，这一点确实很头疼。
 
 需要注意的是font-awesome.min中font的路径。最好把font文件放在font-awesome.min.css文件父级的同级目录中。
 
-三.vue重构版在vue分支上
+三.vue重构版本在vue分支上
