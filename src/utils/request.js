@@ -11,7 +11,6 @@ function startLoading() {
     lock: true,
     text: "拼命加载中",
     background: "rgba(0,0,0,0.7)"
-
   })
 }  //配置loading
 

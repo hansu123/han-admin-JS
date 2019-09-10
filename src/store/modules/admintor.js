@@ -14,9 +14,6 @@ const admintor = {
     roleRoute: undefined,
     allRoute:undefined
   },
-  getters: {
-
-  },
   mutations: {
     [SET_TOKEN](state, token) {
       state.token = token;
@@ -95,8 +92,6 @@ console.log(routes)
     })
     return isRouter.length ? true : false
   }
-
-
 }
 
 export default admintor;

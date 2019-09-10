@@ -143,7 +143,6 @@ getAllowRouter->然后跟本地的路由进行筛选->得到最终的路由，�
 
 ```javascript
 if (isLogin) {
-      
         store.dispatch("admintor/getRoute").then(()=>{
           store.dispatch("admintor/getAllowedRoute")
           next() // hack方法 确保addRoutes已完成 ,

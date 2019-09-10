@@ -27,7 +27,6 @@ const routes =
 
         { path: '/log', name: 'log', component: resolve => require(['../views/log/index.vue'], resolve), meta: { icon: ['iconfont', 'icon-rizhi'], title: "log" } },
 
-        { path: '/test', name: 'test', component: resolve => require(['../views/test/index.vue'], resolve), meta: { icon: ['iconfont', 'icon-rizhi'], title: "test" } },
       ]
     }
 

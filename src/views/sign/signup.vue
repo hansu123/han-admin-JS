@@ -73,7 +73,7 @@ export default {
             identity: $identity
           });
           this.axios.post(url, formData).then(result => {
-            if (result.data.message == "ok") {
+            if (result.data.code===0) {
               this.$message({
                 message: "注册成功,3s跳转",
                 type: "success"
