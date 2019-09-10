@@ -9,11 +9,15 @@
     "start": "npm run dev",
     "build": "node build/build.js",
     "analyz": "set NODE_ENV=production npm_config_report=true npm run build",
-    "commit":"git-cz"
+    "commit": "git-cz",
+    "release": "standard-version"
   },
   "dependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-angular": "^8.1.0",
     "axios": "^0.18.0",
     "element-ui": "^2.6.3",
+    "husky": "^3.0.5",
     "jwt-decode": "^2.2.0",
     "marked": "^0.6.1",
     "mavon-editor": "^2.7.3",
@@ -79,6 +83,13 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo 我要提交代码啦",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "echo 提交代码前需要先进行单元测试 && npn test"
     }
   }
 }
